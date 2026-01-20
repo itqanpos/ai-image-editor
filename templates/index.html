@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Image Editor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>AI Image Editor</h1>
+
+    <form action="/edit" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+
+        <select name="action">
+            <option value="enhance">Enhance Image</option>
+            <option value="remove_bg">Remove Background</option>
+            <option value="color_fix">Fix Colors</option>
+        </select>
+
+        <button type="submit">Process Image</button>
+    </form>
+</body>
+</html>
